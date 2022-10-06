@@ -12,7 +12,8 @@
         <title> Listado </title>
     </head>
     <body>
-        <table border="1">
+        <form action="Registro.jsp">
+            <table border="1">
             <tr style="background-color: #3386FF ">
                 <td>Fecha</td>
                 <td> Hora </td>
@@ -86,5 +87,8 @@
                 <td></td>
             </tr>
         </table>
+               <button type="submit">Seguir añadiendo actividades</button>
+        </form>
+        
     </body>
 </html>
