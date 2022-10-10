@@ -47,8 +47,10 @@ public class servletEventos extends HttpServlet {
             boolean correcto=false;
             ServletContext contexto=getServletContext();
             RequestDispatcher rd;
+            String departamento="";
         for(int x=0;x<usuarios.length;x++){
-                    
+                    departamento=usuarios[x];
+                    contexto.setAttribute("departamento", departamento);
                  if (usuario.equalsIgnoreCase(usuarios[x]) && contrasena.equalsIgnoreCase(contrasenas[x])) {
                  correcto=true;
                  break;

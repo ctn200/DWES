@@ -1,9 +1,6 @@
-<%-- 
-    Document   : Registro
-    Created on : 6 oct. 2022, 12:32:31
-    Author     : alumno
---%>
-
+<%
+    String departamento = (String) getServletContext().getAttribute("departamento");
+%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -40,13 +37,29 @@
                                     </td>
                                     <tr>
                                         <td>Curso destinado</td>
-                                            <td>
+                                           
+                                                <% if (departamento.equalsIgnoreCase("eso")) {
+
+
+                                                %>
+                                        <td>
                                         <select name="cursoDestinado">
-                                        <option> ESO </option>
-                                        <option> SANIDAD </option>
-                                        <option> COCINA </option>
-                                        <option> INFORMATICA </option>
-                                    </select>
+                                        <option> 1ºESO </option>
+                                        <option> 2ºESO</option>
+                                        <option> 3ºESO</option>
+                                        <option> 4ºESO</option>
+                                        </select>
+                                                <%
+                                                    }else{
+                                                %>
+                                        <td>        
+                                        <select name="cursoDestinado">
+                                        <option> 1ºCURSO </option>
+                                        <option> 2ºCURSO</option>
+                                        </select>
+                                                 <%
+                                                    }
+                                                %>
                                             </td>
                                     </tr>
                                     <tr>
@@ -68,10 +81,7 @@
                                             <button type="submit" action="Listado.jsp">Listado de  Actividades</button>
                                         </td>
                                     </tr>
-                                </table>       
-                                    
-           
-           
+                                </table>     
             </form>
                                
    
