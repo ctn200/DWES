@@ -4,9 +4,17 @@
         <servlet-name>servletEventos</servlet-name>
         <servlet-class>eventos.servletEventos</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>compruebaDatos</servlet-name>
+        <servlet-class>eventos.compruebaDatos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>servletEventos</servlet-name>
         <url-pattern>/servletEventos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>compruebaDatos</servlet-name>
+        <url-pattern>/compruebaDatos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

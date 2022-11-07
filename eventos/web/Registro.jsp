@@ -9,7 +9,7 @@
         <title> Registro </title>
     </head>
     <body>
-        <form action="Listado.jsp">
+        <form action="compruebaDatos" method="POST">
              <table>
                                     <tr>
                                         <td> Nombre de la actividad</td><td>  <input type="type" name="nombre" size="50"></td><br>
@@ -30,10 +30,10 @@
                                      <td> Tipo de actividad:</td>
                                     <br>
                                     <td>
-                                        <input type="checkbox" name="tipoActividad" value="ON" />academica<br>
-                                        <input type="checkbox" name="tipoActividad" value="ON" />deportiva<br>                              
-                                        <input type="checkbox" name="tipoActividad" value="ON" />cultural<br>
-                                        <input type="checkbox" name="tipoActividad" value="ON" />convivencia<br>
+                                        <input type="checkbox" name="tipoActividad" value="academica" />academica<br>
+                                        <input type="checkbox" name="tipoActividad" value="deportiva" />deportiva<br>                              
+                                        <input type="checkbox" name="tipoActividad" value="cultural" />cultural<br>
+                                        <input type="checkbox" name="tipoActividad" value="convivencia" />convivencia<br>
                                     </td>
                                     <tr>
                                         <td>Curso destinado</td>
@@ -76,9 +76,9 @@
                                     <tr>
                                         <td></td>
                                         <td>
-                                            <button type="button">Añadir Actividad</button>
-                                             <button type="reset">Borrar Actividad</button>
-                                            <button type="submit" action="Listado.jsp">Listado de  Actividades</button>
+                                            <button type="submit">Añadir Actividad</button>
+                                            <button type="reset">Borrar Actividad</button>
+                                            <button type="button" onclick="location.href='Listado.jsp'">Listado de  Actividades</button>
                                         </td>
                                     </tr>
                                 </table>     

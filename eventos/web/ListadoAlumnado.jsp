@@ -34,7 +34,8 @@
                         
                     
                 for(actividad act:evento){
-         
+                    
+               if (act.getDestinado().equalsIgnoreCase("alumnado")) {
             %>
             <tr style="background-color: #33FFE9 ">
                 <td><%=act.getFecha()%></td>
@@ -49,7 +50,7 @@
                 <td><%=act.getObservaciones()%></td>               
                 
             </tr>
-            <%}%>
+            <%}}%>
         </table>
                <button type="submit">Seguir añadiendo actividades</button>
                <button type="button" onclick="location.href='Listado.jsp'">Ver todas las actividades</button>
